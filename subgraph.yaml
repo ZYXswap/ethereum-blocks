@@ -1,15 +1,16 @@
 specVersion: 0.0.2
-description: Indexing all Ethereum Block data
-repository: https://github.com/blocklytics/ethereum-blocks
+description: Indexing all Zyx Block data
+repository: https://github.com/ZYXswap/zyx-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: rinkeby
+    network: mainnet
     source:
-      address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
+      address: "0x78df149491688429B41D6011F2f30D2fB6dA5427"
       abi: ConverterRegistryContract
+      startBlock: 179715
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
